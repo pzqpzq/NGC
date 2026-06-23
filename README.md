@@ -29,7 +29,6 @@ This repository contains the sanitized core code and representative data needed 
 - cached baseline comparisons and adaptive-router experiments;
 - representative figures, tables, and source data supporting the manuscript.
 
-> **Scope note.** This is a curated public-release candidate for method-level reproducibility. It is not a full raw experiment archive and does not include model checkpoints, full raw prediction dumps, private data/model loaders, or private infrastructure paths.
 
 ---
 
