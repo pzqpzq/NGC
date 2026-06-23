@@ -1,0 +1,2 @@
+contrast,diff,ci_low,ci_high,p_boot,n_queries
+mid_departure_minus_non_mid_query_mean_correctness,-0.02906533500964488,-0.03693784352693822,-0.021123954173850757,0.0,1503

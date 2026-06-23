@@ -1,0 +1,43 @@
+\begin{table}[t]
+\centering
+\caption{Causal perturbation of broker and settlement roles.}
+\label{tab:jun15_causal_role}
+\footnotesize
+\begin{tabular}{llllrrrrr}
+\toprule
+model & dataset & selector & contrast & diff & ci\_low & ci\_high & p\_boot & n \\
+\midrule
+llama3-8b & gpqa & fixed & intact\_minus\_broker\_random & 0.2000 & 0.0000 & 0.5000 & 0.2280 & 10 \\
+llama3-8b & gpqa & fixed & intact\_minus\_broker\_svd & -0.1000 & -0.3000 & 0.0000 & 0.6930 & 10 \\
+llama3-8b & gpqa & fixed & intact\_minus\_matched\_nonrole\_random & -0.1000 & -0.5000 & 0.3000 & 0.8230 & 10 \\
+llama3-8b & gpqa & fixed & intact\_minus\_settlement\_random & 0.0000 & 0.0000 & 0.0000 & 1.0000 & 10 \\
+llama3-8b & gpqa & fixed & intact\_minus\_settlement\_svd & 0.0000 & 0.0000 & 0.0000 & 1.0000 & 10 \\
+llama3-8b & hotpot-qa & fixed & intact\_minus\_broker\_random & 0.5714 & 0.1429 & 0.8571 & 0.0030 & 7 \\
+llama3-8b & hotpot-qa & fixed & intact\_minus\_broker\_svd & 0.1429 & 0.0000 & 0.4286 & 0.6750 & 7 \\
+llama3-8b & hotpot-qa & fixed & intact\_minus\_matched\_nonrole\_random & 0.2857 & -0.2857 & 0.7143 & 0.4400 & 7 \\
+llama3-8b & hotpot-qa & fixed & intact\_minus\_settlement\_random & 0.0000 & 0.0000 & 0.0000 & 1.0000 & 7 \\
+llama3-8b & hotpot-qa & fixed & intact\_minus\_settlement\_svd & 0.0000 & 0.0000 & 0.0000 & 1.0000 & 7 \\
+qwen3-8b & aime & fixed & intact\_minus\_broker\_random & 0.0000 & 0.0000 & 0.0000 & 1.0000 & 7 \\
+qwen3-8b & aime & fixed & intact\_minus\_broker\_svd & 0.0000 & 0.0000 & 0.0000 & 1.0000 & 7 \\
+qwen3-8b & aime & fixed & intact\_minus\_matched\_nonrole\_random & 0.0000 & 0.0000 & 0.0000 & 1.0000 & 7 \\
+qwen3-8b & aime & fixed & intact\_minus\_settlement\_random & 0.0000 & 0.0000 & 0.0000 & 1.0000 & 7 \\
+qwen3-8b & aime & fixed & intact\_minus\_settlement\_svd & 0.0000 & 0.0000 & 0.0000 & 1.0000 & 7 \\
+qwen3-8b & gpqa & fixed & intact\_minus\_broker\_random & 0.5625 & 0.3125 & 0.8125 & 0.0000 & 16 \\
+qwen3-8b & gpqa & fixed & intact\_minus\_broker\_svd & -0.0625 & -0.1875 & 0.0000 & 0.6820 & 16 \\
+qwen3-8b & gpqa & fixed & intact\_minus\_matched\_nonrole\_random & 0.0625 & -0.2500 & 0.3750 & 0.8720 & 16 \\
+qwen3-8b & gpqa & fixed & intact\_minus\_settlement\_random & 0.0000 & 0.0000 & 0.0000 & 1.0000 & 16 \\
+qwen3-8b & gpqa & fixed & intact\_minus\_settlement\_svd & 0.0000 & 0.0000 & 0.0000 & 1.0000 & 16 \\
+qwen3-8b & hotpot-qa & fixed & intact\_minus\_broker\_random & 0.6154 & 0.3846 & 0.8462 & 0.0000 & 13 \\
+qwen3-8b & hotpot-qa & fixed & intact\_minus\_broker\_svd & 0.0000 & 0.0000 & 0.0000 & 1.0000 & 13 \\
+qwen3-8b & hotpot-qa & fixed & intact\_minus\_matched\_nonrole\_random & 0.3846 & 0.1538 & 0.6154 & 0.0030 & 13 \\
+qwen3-8b & hotpot-qa & fixed & intact\_minus\_settlement\_random & 0.0000 & 0.0000 & 0.0000 & 1.0000 & 13 \\
+qwen3-8b & hotpot-qa & fixed & intact\_minus\_settlement\_svd & 0.0000 & 0.0000 & 0.0000 & 1.0000 & 13 \\
+qwen3-8b & math500 & fixed & intact\_minus\_broker\_random & 0.0000 & 0.0000 & 0.0000 & 1.0000 & 14 \\
+qwen3-8b & math500 & fixed & intact\_minus\_broker\_svd & 0.0000 & 0.0000 & 0.0000 & 1.0000 & 14 \\
+qwen3-8b & math500 & fixed & intact\_minus\_matched\_nonrole\_random & 0.0000 & 0.0000 & 0.0000 & 1.0000 & 14 \\
+qwen3-8b & math500 & fixed & intact\_minus\_settlement\_random & 0.0000 & 0.0000 & 0.0000 & 1.0000 & 14 \\
+qwen3-8b & math500 & fixed & intact\_minus\_settlement\_svd & 0.0000 & 0.0000 & 0.0000 & 1.0000 & 14 \\
+\bottomrule
+\end{tabular}
+
+\end{table}

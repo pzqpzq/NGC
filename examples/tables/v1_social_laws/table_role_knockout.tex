@@ -1,0 +1,17 @@
+\begin{table}[t]
+\centering
+\begin{tabular}{lrrrrrrr}
+\toprule
+Condition & Queries & Top-1 & Top-5 & Mean@5 & Full - condition & 95\% CI & p\_boot \\
+\midrule
+full law & 1503 & 60.8 & 81.6 & 58.9 &  &  &  \\
+drop veto & 1503 & 57.8 & 80.9 & 56.8 & +0.67 & [-0.53, +1.80] & 0.293 \\
+drop evidence broker & 1503 & 59.1 & 80.8 & 57.9 & +0.80 & [-0.27, +1.86] & 0.167 \\
+drop mediator & 1503 & 60.8 & 80.8 & 60.1 & +0.80 & [-0.07, +1.66] & 0.081 \\
+drop settlement & 1503 & 62.7 & 79.7 & 59.8 & +1.86 & [+0.47, +3.33] & 0.010 \\
+drop reconstruction guard & 1503 & 55.6 & 79.6 & 56.2 & +2.00 & [+0.40, +3.59] & 0.016 \\
+\bottomrule
+\end{tabular}
+\caption{Role-knockout cached analysis. Positive full-minus-drop contrasts indicate roles whose removal degrades recovery.}
+\label{tab:ngc\_role\_knockout}
+\end{table}

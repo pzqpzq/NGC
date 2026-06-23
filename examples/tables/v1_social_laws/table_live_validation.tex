@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\begin{tabular}{lrrrrrr}
+\toprule
+Pair & Queries & Raw & Top-1 & Top-5 & Top-5 - raw & Best F1 \\
+\midrule
+llama3-8b/gpqa & 75 & 42.7 & 36.0 & 52.0 & +9.33 & 63.5 \\
+llama3-8b/hotpot-qa & 75 & 66.7 & 54.7 & 70.7 & +4.00 & 70.4 \\
+qwen3-4b/gpqa & 75 & 42.7 & 38.7 & 58.7 & +16.00 & 66.6 \\
+qwen3-8b/hotpot-qa & 75 & 54.7 & 54.7 & 62.7 & +8.00 & 67.1 \\
+Pooled adjudication-ready & 375 & 54.9 & 50.4 & 64.8 & +9.87 &  \\
+\bottomrule
+\end{tabular}
+\caption{Expanded live validation. The pooled row includes the additional earlier qwen3-4b/Hotpot-QA run and is automatic-equivalent until manual adjudication fields are filled.}
+\label{tab:ngc\_live\_validation}
+\end{table}

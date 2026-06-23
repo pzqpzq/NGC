@@ -1,0 +1,38 @@
+group,comparison,estimate,ci_low,ci_high,p_boot,n,interpretation
+selector,fixed C316 pass@5,0.77,,,,300,Best actionable cached selector by pass@5.
+selector,fixed C316 gain over raw,0.2007777666666666,,,,300,Large cached top-k recovery relative to raw labels.
+predictive,HGB negotiated-observable candidate AUC,0.7699390447410566,,,,300,Joint negotiated observables predict candidate correctness.
+predictive,reconstruction-only candidate AUC,0.5196541416459471,,,,300,Weaker than joint negotiated observables.
+matched_control,reconstruction_tcr_matched,0.0079840319361277,-0.0113107119095143,0.0272787757817697,0.4236,1503,Mixed; confidence interval overlaps zero.
+matched_control,too_conservative,-0.0106453759148369,-0.0292747837658017,0.0079840319361277,0.286,1503,Mixed; confidence interval overlaps zero.
+matched_control,too_disruptive,0.0046573519627411,-0.0146373918829008,0.0246174318030605,0.6504,1503,Mixed; confidence interval overlaps zero.
+matched_control,role_shuffled,-0.0073186959414504,-0.0292747837658017,0.0146373918829008,0.5384,1503,Mixed; confidence interval overlaps zero.
+role_knockout,full_law_minus_drop_evidence_broker (passk),0.0079840319361277,-0.0026613439787092,0.0186294078509647,0.167,1503.0,Positive values indicate degradation after role removal.
+role_knockout,full_law_minus_drop_evidence_broker (mean_at_k),0.0106453759148369,0.0057218895542248,0.0157019294743845,0.0,1503.0,Positive values indicate degradation after role removal.
+role_knockout,full_law_minus_drop_mediator (passk),0.0079840319361277,-0.0006653359946773,0.0166333998669328,0.0808,1503.0,Positive values indicate degradation after role removal.
+role_knockout,full_law_minus_drop_mediator (mean_at_k),-0.0114437791084497,-0.0162341982701264,-0.0066533599467731,0.0,1503.0,Positive values indicate degradation after role removal.
+role_knockout,full_law_minus_drop_settlement (passk),0.0186294078509647,0.0046573519627411,0.0332667997338656,0.0104,1503.0,Positive values indicate degradation after role removal.
+role_knockout,full_law_minus_drop_settlement (mean_at_k),-0.0087824351297405,-0.0165003326679973,-0.0010645375914836,0.0284,1503.0,Positive values indicate degradation after role removal.
+role_knockout,full_law_minus_drop_veto (passk),0.0066533599467731,-0.0053226879574184,0.0179640718562874,0.2928,1503.0,Positive values indicate degradation after role removal.
+role_knockout,full_law_minus_drop_veto (mean_at_k),0.0212907518296739,0.0147704590818363,0.0278110445775116,0.0,1503.0,Positive values indicate degradation after role removal.
+role_knockout,full_law_minus_drop_reconstruction_guard (passk),0.0199600798403193,0.0039920159680638,0.0359281437125748,0.0162,1503.0,Positive values indicate degradation after role removal.
+role_knockout,full_law_minus_drop_reconstruction_guard (mean_at_k),0.0278110445775116,0.0191616766467065,0.03646373918829,0.0,1503.0,Positive values indicate degradation after role removal.
+bounded_disagreement,departure_index_std,-0.0167335895109928,-0.0224325168467476,-0.0109454056220737,0.0,300.0,Diagnostic regression term.
+bounded_disagreement,departure_sq,0.0019388631539128,0.0010510058911556,0.0026756840600563,0.0,300.0,Diagnostic regression term.
+bounded_disagreement,stability_guard_std,0.0193238394272299,0.012765728077805,0.0257288221782729,0.0,300.0,Diagnostic regression term.
+bounded_disagreement,reconstruction_error_log10_std,-0.0318027203153658,-0.0398721268441799,-0.0250858833735502,0.0,300.0,Diagnostic regression term.
+bounded_disagreement,mid_departure_minus_non_mid_query_mean_correctness,-0.0290653350096448,-0.0369378435269382,-0.0211239541738507,0.0,1503.0,Negative result against simple mid-departure hypothesis.
+live,Adjudicated top-1 - raw,-0.0453333333333333,-0.08,-0.0106666666666666,0.009,375,Automatic-equivalent until manual overrides are filled.
+live,Adjudicated top-5 - raw,0.0986666666666666,0.0666666666666666,0.1333333333333333,0.0,375,Automatic-equivalent until manual overrides are filled.
+live,Adjudicated top-5 - top-1,0.144,0.1093333333333333,0.1813333333333333,0.0,375,Automatic-equivalent until manual overrides are filled.
+overhead,C316_ranking_only,4.911338328383863e-06,,,,4,Median peak memory 0.000 GB.
+overhead,ngc_top1_generation,0.2807437777519226,,,,80,Median peak memory 11.520 GB.
+overhead,ngc_top5_generation,0.3282999992370605,,,,400,Median peak memory 11.333 GB.
+overhead,raw_generation,0.2902721166610718,,,,80,Median peak memory 11.618 GB.
+overhead,reconstruction_ranking_only,4.911073483526707e-06,,,,4,Median peak memory 0.000 GB.
+failure_taxonomy,S0 selected_success,914.0,,,,,Aggregate count across cached held-out outputs.
+failure_taxonomy,F1 over_conservative,272.0,,,,,Aggregate count across cached held-out outputs.
+failure_taxonomy,F3 wrong_community,268.0,,,,,Aggregate count across cached held-out outputs.
+failure_taxonomy,F6 residual_failure,23.0,,,,,Aggregate count across cached held-out outputs.
+failure_taxonomy,F5 grading_sensitive_or_symbolic,17.0,,,,,Aggregate count across cached held-out outputs.
+failure_taxonomy,F2 over_disruptive,9.0,,,,,Aggregate count across cached held-out outputs.

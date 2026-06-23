@@ -1,0 +1,5 @@
+diff,ci_low,ci_high,p_boot,n,control_type,metric
+0.007984031936127744,-0.011310711909514305,0.027278775781769793,0.4236,1503,reconstruction_tcr_matched,selected_correct_minus_control_correct
+-0.010645375914836993,-0.02927478376580173,0.007984031936127744,0.286,1503,too_conservative,selected_correct_minus_control_correct
+0.004657351962741184,-0.014637391882900865,0.024617431803060547,0.6504,1503,too_disruptive,selected_correct_minus_control_correct
+-0.007318695941450432,-0.02927478376580173,0.014637391882900865,0.5384,1503,role_shuffled,selected_correct_minus_control_correct

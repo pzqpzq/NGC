@@ -1,0 +1,2 @@
+diff,ci_low,ci_high,p_boot,n,contrast
+0.035398230088495575,-0.017699115044247787,0.08849557522123894,0.21733333333333332,226,fixed_law_top1_minus_reconstruction_matched_control

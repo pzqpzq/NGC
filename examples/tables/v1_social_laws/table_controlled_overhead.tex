@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\begin{tabular}{lrrrrrr}
+\toprule
+Condition & Rows & Median sec & Peak GB & Model-load sec & WTP-load sec & Materialize sec \\
+\midrule
+C316 ranking only & 4 & 4.91e-06 & 0.00 & 0.00e+00 & 0.00e+00 & 0.00e+00 \\
+Reconstruction ranking only & 4 & 4.91e-06 & 0.00 & 0.00e+00 & 0.00e+00 & 0.00e+00 \\
+Raw generation & 80 & 0.290 & 11.62 & 41.788 & 0.00e+00 & 0.00e+00 \\
+NGC top-1 generation & 80 & 0.281 & 11.52 & 20.773 & 0.737 & 0.017 \\
+NGC top-5 generation & 400 & 0.328 & 11.33 & 86.296 & 6.653 & 0.094 \\
+\bottomrule
+\end{tabular}
+\caption{Controlled overhead benchmark over four Qwen3 model/dataset pairs.}
+\label{tab:ngc\_controlled\_overhead}
+\end{table}

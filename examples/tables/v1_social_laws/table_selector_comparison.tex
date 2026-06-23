@@ -1,0 +1,17 @@
+\begin{table}[t]
+\centering
+\begin{tabular}{lrrrrrrr}
+\toprule
+Selector & Queries & Raw & Top-1 & Top-5 & Top-5 gain & Candidate AUC & AP \\
+\midrule
+Random expected & 300 & 56.9 & 54.0 & 77.0 & +20.10 &  &  \\
+Reconstruction only & 300 & 56.9 & 58.3 & 74.0 & +17.08 & 0.520 & 0.571 \\
+Fixed C316 law & 300 & 56.9 & 57.7 & 77.0 & +20.08 & 0.499 & 0.566 \\
+Negotiated observables HGB & 300 & 56.9 & 56.3 & 76.7 & +19.74 & 0.770 & 0.797 \\
+Calibrated ensemble & 300 & 56.9 & 60.3 & 76.7 & +19.74 & 0.722 & 0.748 \\
+Scalar law only & 300 & 56.9 & 56.3 & 76.7 & +19.74 & 0.501 & 0.567 \\
+\bottomrule
+\end{tabular}
+\caption{Held-out topology-selection comparison. Values are percentages except AUC/AP.}
+\label{tab:ngc\_selector\_comparison}
+\end{table}
